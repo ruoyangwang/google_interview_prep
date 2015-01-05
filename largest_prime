@@ -1,0 +1,9 @@
+
+def largest_prime(n):
+	not_prime=[j for i in range(2,int(n**0.5)+1) for j in range(i*2,n,i)]
+	print not_prime
+	prime = [i for i in range(2,n) if i not in not_prime]
+	return prime[-1]
+
+
+print largest_prime(20)
